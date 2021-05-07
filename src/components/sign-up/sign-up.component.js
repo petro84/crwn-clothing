@@ -35,7 +35,7 @@ class SignUp extends Component {
         password
       );
 
-      await createUserProfileDoc(user, displayName);
+      await createUserProfileDoc(user, {displayName});
 
       this.setState({
         displayName: '',
